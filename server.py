@@ -6,7 +6,7 @@ from urllib.parse import parse_qs,urlsplit
 from websockets.asyncio.server import serve
 from websockets.exceptions import ConnectionClosed
 
-HOSTS=frozenset({'auth.bbbgame.net','msm-auth.bbbgame.net','6df86d1d2fb0.us-east-1.sdk.awswaf.com'})
+HOSTS=frozenset({'dlc2.bbbgame.net', 'msm-mobile-prod-v2.bbbgame.net', 'newsflash-api.bbbgame.net', 'ad-assets.bbbgame.net', 'auth.bbbgame.net','msm-auth.bbbgame.net','6df86d1d2fb0.us-east-1.sdk.awswaf.com'})
 MAX_BYTES=64*1024*1024
 
 class Relay:
