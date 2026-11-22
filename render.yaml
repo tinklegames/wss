@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: apkwasm-msm-proxy
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: RELAY_TOKEN
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: http://127.0.0.1:8877,http://localhost:8877
